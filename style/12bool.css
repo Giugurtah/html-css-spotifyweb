@@ -6,7 +6,7 @@
 }
 
 /* Container properties */
-.container {
+.container-bl {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -122,6 +122,21 @@
     vertical-align: middle;
 }
 
+.flex {
+    display: flex;
+}
+
+.flx-end {
+    justify-self: flex-end;
+}
+
+.flx-center {
+    justify-self: center;
+}
+
+.flx-start {
+    justify-self: flex-start;
+}
 /* Responsive properties */
 @media screen and (max-width:1200px){
     .row {

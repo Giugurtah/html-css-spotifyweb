@@ -4,16 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href = "https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:300,400,500,700" rel = "stylesheet" />
     <link rel="stylesheet" href="./style/12bool.css">
     <link rel="stylesheet" href="./style/index.css">
     <title>Spotify</title>
 </head>
 <body>
-    <nav></nav>
+    <nav class="flex">
+        <span class="horizontal-centred">
+            <img src="./img/logo-small.svg" alt="">
+            <img src="./img/home.svg" alt="">
+            <img src="./img/search.svg" alt="">
+            <img src="./img/libreria.svg" alt="">
+        </span>
+
+        <span class="horizontal-centred">
+            <img src="./img/download.svg" class="flx-end" alt="">
+            <div class="user"></div>
+        </span>
+    </nav>
     <div class="container">
-        <header>
+        <header class="relative">
+            <div class="button">
+                EFFETTUA L'UPGRADE
+            </div>
         </header>
         <main>
+            <ul class="horizontal-centred">
+                <li>IN EVIDENZA</li>
+                <li>PODCAST</li>
+                <li>CLASSIFICHE</li>
+                <li>GENERI E MOOD</li>
+                <li>NUOVE USCITE</li>
+                <li>SCOPRI</li>
+            </ul>
+            <h2>Recently played</h2>
+            
         </main>
     </div>
     <footer></footer>
