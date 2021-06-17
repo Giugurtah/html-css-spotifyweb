@@ -11,27 +11,20 @@ ul {
 
 body {
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Margin properties */
+/* General properties */
 .my-10 {
     margin: 10px 0;
 }
+
+.gray-text {
+    color: rgb(110, 110, 110);
+}
+
+
 /* Elements */
-.button {
-    display: inline-block;
-    height: 40px;
-    padding: 10px 30px;
-    border: 1px solid white;
-    border-radius: 20px;
-}
-
-.circular {
-    border-radius: 50%;
-}
-
-/* Layout management */
 .container {
     position: absolute;
     top: 0;
@@ -42,12 +35,37 @@ body {
     background-color: rgb(20, 25, 34);
 }
 
-footer {
-    height: 100px;
-    width: 100%;
-
-    background-color: rgb(40, 40, 40);
+.button {
+    display: inline-block;
+    height: 40px;
+    padding: 10px 30px;
+    border: 1px solid white;
+    border-radius: 20px;
 }
+
+.volume-bar {
+    display: inline-block;
+
+    height: 6px;
+    border-radius: 3px; 
+    background-color: rgb(80, 80, 80);
+    
+    margin-bottom: 3px;
+}
+
+.volume-bar .volume-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 30%;
+    background-color: rgb( 150, 150, 150);
+}
+
+.circular {
+    border-radius: 50%;
+}
+
 
 /* Styling header */
 header {
@@ -104,26 +122,71 @@ main {
 
 li {
     display: inline-block;
-    color: rgb(110, 110, 110);
-    font-weight: 500;
-
+ 
     margin: 20px 10px;
 }
 
 h2 {
-    font-size: 30px;
-    font-weight: 700;
-    
+    font-size: 30px;    
     margin: 15px 0;
 }
 
 h4 {
-    font-weight: 500;
-    color: rgb(110, 110, 110);
+    font-size: 15px;
+    margin: 10px 0;
 }
 
 main img {
     max-width: 90%;
 }
 
+/* styling footer */
+footer {
+    height: 100px;
+    width: 100%;
 
+    background-color: rgb(40, 40, 40);
+
+    padding: 20px 10px;
+}
+
+.player {
+    width: calc(100% - 320px);
+    padding: 10px;
+}
+
+.now-playing, .volume {
+    width: 160px;
+}
+
+.now-playing img {
+    width: 50px;
+    margin: 0 10px
+}
+
+.now-playing div {
+    display: inline-block;
+    width: 85px;
+}
+
+.volume .fas {
+    line-height: 60px;
+    margin: 0 3px;
+    font-size: 15px;
+}
+
+.volume > .volume-bar {
+    width: 75px;
+}
+
+.player .fas, .player .far {
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.player > .volume-bar {
+    width: 100%;
+    max-width: 300px;
+    min-width: 150px;
+    margin-top: 20px;
+}

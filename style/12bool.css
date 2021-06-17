@@ -110,12 +110,36 @@
 }
 
 /* Additional utilities */
+.bold-700 {
+    font-weight: 700;
+}
+
+.bold-600 {
+    font-weight: 600;
+}
+
+.bold-500 {
+    font-weight: 500;
+}
+
+.bold-400 {
+    font-weight: 400;
+}
+
+.bold-200 {
+    font-weight: 200;
+}
+
 .relative {
     position: relative;
 }
 
 .horizontal-centred {
     text-align: center;
+}
+
+.horizontal-right {
+    text-align: right;
 }
 
 .vertical-centered {
@@ -127,22 +151,26 @@
 }
 
 .flx-end {
-    justify-self: flex-end;
+    justify-content: flex-end;
 }
 
 .flx-center {
-    justify-self: center;
+    justify-content: center;
 }
 
 .flx-start {
-    justify-self: flex-start;
+    justify-content: flex-start;
+}
+
+.flx-between {
+    justify-content: space-between;
+}
+
+.flx-around {
+    justify-content: space-around;
 }
 /* Responsive properties */
 @media screen and (max-width:1200px){
-    .row {
-        justify-content: center;
-    }
-
     .col-lg-12 {
         width: 100%;
     }
@@ -219,10 +247,6 @@
 }
 
 @media screen and (max-width:992px){
-    .row {
-        justify-content: center;
-    }
-
     .col-md-12 {
         width: 100%;
     }
@@ -299,11 +323,7 @@
 }
 
 @media screen and (max-width:768px){
-    .row {
-        justify-content: center;
-    }
-
-    .col-sm-12 {
+   .col-sm-12 {
         width: 100%;
     }
     .col-sm-11 {
