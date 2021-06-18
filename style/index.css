@@ -59,7 +59,7 @@ h4 {
     border-radius: 20px;
 }
 
-.volume-bar {
+.bar {
     display: inline-block;
 
     height: 6px;
@@ -69,7 +69,7 @@ h4 {
     margin-bottom: 3px;
 }
 
-.volume-bar .volume-bar {
+.bar .bar {
     position: absolute;
     top: 0;
     left: 0;
@@ -131,6 +131,11 @@ nav .line {
     height: 2px;
     width: 209px;
     background-color: rgb(40, 40, 40);
+}
+
+.playlist {
+    flex-grow: 1;
+    overflow: scroll;
 }
 
 .playlist li {
@@ -197,7 +202,7 @@ footer {
     font-size: 15px;
 }
 
-.volume > .volume-bar {
+.volume > .bar {
     width: 75px;
 }
 
@@ -206,7 +211,7 @@ footer {
     font-size: 20px;
 }
 
-.player > .volume-bar {
+.player > .bar {
     width: 100%;
     max-width: 300px;
     min-width: 150px;
@@ -215,6 +220,10 @@ footer {
 
 /* Responsive properites */
 .sm {
+    display: none;
+}
+
+.md{
     display: none;
 }
 
@@ -250,5 +259,15 @@ footer {
 
     header {
         width: calc(100% - 225px);  
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h3 {
+        font-size: 15px;
+    }
+
+    .md {
+        display: initial;
     }
 }
