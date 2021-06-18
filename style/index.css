@@ -33,6 +33,10 @@ h4 {
     margin: 10px 0;
 }
 
+.pl-8 {
+    padding-left: 8px;
+}
+
 /* Elements */
 .container {
     position: absolute;
@@ -110,20 +114,31 @@ nav {
 }
 
 nav img {
-    width: 70%;
+    width: 33px;
 }
 
 .user {
-    height: 35px;
-    width: 35px;
+    height: 33px;
+    width: 33px;
     border-radius: 50%;
 
     background-image: url(../img/profile.svg);
     background-position: center;
     background-color: rgb(40, 40, 40);
+}
 
-    margin-left: auto;
-    margin-right: auto;
+nav .line {
+    height: 2px;
+    width: 209px;
+    background-color: rgb(40, 40, 40);
+}
+
+.playlist li {
+    margin: 15px 0;
+}
+
+.playlist .fas {
+    font-size: 40px;
 }
 
 /* Styling main */
@@ -134,7 +149,7 @@ main {
     padding: 20px;
 }
 
-li {
+main li {
     display: inline-block;
  
     margin: 20px 10px;
@@ -196,4 +211,44 @@ footer {
     max-width: 300px;
     min-width: 150px;
     margin-top: 20px;
+}
+
+/* Responsive properites */
+.sm {
+    display: none;
+}
+
+@media screen and (min-width: 576px) {
+    .sm {
+        display: initial;
+    }
+
+    .xs {
+        display: none;
+    }
+
+    nav {
+        width: 225px;
+    }
+
+    nav #big-logo {
+        width: 150px;
+    }
+
+    nav span {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    nav .line {
+        display: inline-block;
+    }
+
+    .container {
+        width: calc(100% - 225px);
+    }
+
+    header {
+        width: calc(100% - 225px);  
+    }
 }
