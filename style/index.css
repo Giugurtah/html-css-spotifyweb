@@ -9,20 +9,29 @@ ul {
     list-style: none;
 }
 
+/* Font properties */
 body {
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
-/* General properties */
-.my-10 {
-    margin: 10px 0;
+h2 {
+    font-size: 30px;    
+    margin: 15px 0;
+}
+
+h4 {
+    font-size: 15px;
 }
 
 .gray-text {
     color: rgb(110, 110, 110);
 }
 
+/* Margin properties */
+.my-10 {
+    margin: 10px 0;
+}
 
 /* Elements */
 .container {
@@ -32,7 +41,10 @@ body {
 
     height: calc(100vh - 100px);
     width: calc(100% - 50px);
+
     background-color: rgb(20, 25, 34);
+
+    overflow: scroll;
 }
 
 .button {
@@ -70,9 +82,11 @@ body {
 /* Styling header */
 header {
     height: 100px;
-    width: 100%;
+    width: calc(100% - 50px);
 
     background: rgba(0, 0, 0, 0.3);
+
+    position: fixed;
 }
 
 header .button {
@@ -97,7 +111,6 @@ nav {
 
 nav img {
     width: 70%;
-    margin: 5px 0;
 }
 
 .user {
@@ -109,14 +122,15 @@ nav img {
     background-position: center;
     background-color: rgb(40, 40, 40);
 
-    margin: 5px auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Styling main */
 main {
     height: calc(100% - 100px);
-    overflow: scroll;
 
+    margin-top: 80px;
     padding: 20px;
 }
 
@@ -124,16 +138,6 @@ li {
     display: inline-block;
  
     margin: 20px 10px;
-}
-
-h2 {
-    font-size: 30px;    
-    margin: 15px 0;
-}
-
-h4 {
-    font-size: 15px;
-    margin: 10px 0;
 }
 
 main img {
@@ -147,26 +151,29 @@ footer {
 
     background-color: rgb(40, 40, 40);
 
-    padding: 20px 10px;
+    padding: 20px 5px;
 }
 
 .player {
-    width: calc(100% - 320px);
+    width: calc(100% - 340px);
     padding: 10px;
 }
 
 .now-playing, .volume {
-    width: 160px;
+    width: 170px;
 }
 
 .now-playing img {
-    width: 50px;
-    margin: 0 10px
+    width: 45px;
+    margin: 0 10px;
 }
 
-.now-playing div {
-    display: inline-block;
-    width: 85px;
+.now-playing div:first-of-type {
+    width: 80px;
+}
+
+.now-playing .far {
+    line-height: 30px;
 }
 
 .volume .fas {

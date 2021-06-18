@@ -12,26 +12,32 @@
     <title>Spotify</title>
 </head>
 <body>
+    <!-- Barra di navigazione del sito/app -->
     <nav class="flex">
-        <span class="horizontal-centred">
-            <img src="./img/logo-small.svg" alt="">
-            <img src="./img/home.svg" alt="">
-            <img src="./img/search.svg" alt="">
-            <img src="./img/libreria.svg" alt="">
-        </span>
+        <div class="horizontal-centred">
+            <img src="./img/logo-small.svg" class="my-10" alt="icona logo">
+            <img src="./img/home.svg" class="my-10" alt="icona home">
+            <img src="./img/search.svg" class="my-10" alt="icona di ricerca">
+            <img src="./img/libreria.svg" class="my-10" alt="icona della libreria">
+        </div>
 
-        <span class="horizontal-centred">
-            <img src="./img/download.svg" class="flx-end" alt="">
-            <div class="user"></div>
-        </span>
+        <div class="horizontal-centred">
+            <img src="./img/download.svg" class="flx-end" class="my-10" alt="icona del download">
+            <div class="user my-10"></div> <!-- Div che contiene l'icona dell'user -->
+        </div>
     </nav>
+
+    <!-- Sezione centrale del sito/app -->
     <div class="container">
-        <header class="relative">
+        <!-- Banner promozionale -->
+        <header>
             <div class="button">
                 EFFETTUA L'UPGRADE
             </div>
         </header>
+        <!-- Contenuti principali  -->
         <main>
+            <!-- Sezione di navigazione interna al main  -->
             <ul class="horizontal-centred">
                 <li class="bold-600 gray-text">IN EVIDENZA</li>
                 <li class="bold-600 gray-text">PODCAST</li>
@@ -40,6 +46,8 @@
                 <li class="bold-600 gray-text">NUOVE USCITE</li>
                 <li class="bold-600 gray-text">SCOPRI</li>
             </ul>
+
+            <!-- singola sezione di raggruppamento tematico -->
             <section>
                 <h2 class="bold-700">Recently played</h2>
                 <div class="container-fluid">
@@ -78,6 +86,7 @@
                 </div>
             </section>
 
+            <!-- singola sezione di raggruppamento tematico -->
             <section>
                 <h2 class="bold-700">Creato per Giugurtah</h2>
                 <h4 class="bold-600 gray-text">Più ascolti, più accurati saranno i suggerimenti.</h4>
@@ -95,6 +104,7 @@
                 </div>
             </section>
 
+            <!-- singola sezione di raggruppamento tematico -->
             <section>
                 <h2 class="bold-700">Artisti più popolari</h2>
                 <h4 class="bold-600 gray-text">Più ascolti, più accurati saranno i suggerimenti.</h4>
@@ -111,19 +121,27 @@
                     </div>
                 </div>
             </section>
-
         </main>
     </div>
+
+    <!-- Sezione a pie pagina che funge da player menager -->
     <footer>
         <div class="row flx-between">
+            <!-- Gestione del brano -->
             <div class="now-playing">
                 <img src="./img/sinister.jpeg" alt="" class="vertically-centred">
-                <div>
+                <div class="inline-blk">
                     <span class="bold-700">Sinister</span>
                     <span class="gray-text bold-500">Brano</span>
                     <span class="gray-text bold-500">Nome</span>
                 </div>
+                <div class="inline-blk">
+                    <i class="far fa-heart gray-text"></i>
+                    <br>
+                    <i class="far fa-folder gray-text"></i>
+                </div>
             </div>
+            <!-- Gestione del minutaggio -->
             <div class="player horizontal-centred">
                 <div>
                     <i class="fas fa-random"></i>
@@ -136,6 +154,7 @@
                     <div class="volume-bar"></div>
                 </div>
             </div>
+            <!-- Gestione del volume -->
             <div class="volume">
                 <i class="fas fa-list-ul"></i>
                 <i class="fas fa-tv"></i>
