@@ -15,20 +15,20 @@
     <!-- Barra di navigazione del sito/app -->
     <nav class="flex">
         <div class="pl-8">
-            <div class=" my-10">
-                <img src="./img/logo-small.svg" class="xs" alt="icona logo">
+            <div class="gray-text my-10">
+                <img src="./img/logo-small.svg" class="xs gray" alt="icona logo">
                 <img src="./img/logo.svg" alt="" class="sm" id="big-logo">
             </div>
-            <div class="">
-                <img src="./img/home.svg" class="my-10 vertical-centered" alt="icona home">
+            <div class="gray-text highlight">
+                <img src="./img/home.svg" class="my-10 vertical-centered gray" alt="icona home">
                 <span class="bold-600 sm">Home</span>
             </div>
-            <div class="">
-                <img src="./img/search.svg" class="my-10 vertical-centered" alt="icona di ricerca">
+            <div class="gray-text highlight">
+                <img src="./img/search.svg" class="my-10 vertical-centered gray" alt="icona di ricerca">
                 <span class="bold-600 sm">Cerca</span>
             </div>
-            <div class="">
-                <img src="./img/libreria.svg" class="my-10 vertical-centered" alt="icona della libreria">
+            <div class="gray-text highlight">
+                <img src="./img/libreria.svg" class="my-10 vertical-centered gray" alt="icona della libreria">
                 <span class="bold-600 sm">La tua libreria</span>
             </div>
         </div>
@@ -36,23 +36,23 @@
         <div class="playlist sm pl-8">
             <h3 class="my-10">PLAYLIST</h3>
             <ul class="gray-text">
-                <li>
+                <li class="highlight">
                     <i class="fas fa-plus-square vertical-centered"></i>
                     <span>Crea Playlist</span>
                 </li>
-                <li>Nome playlist</li>
-                <li>Nome playlist</li>
-                <li>Nome playlist</li>
-                <li>Nome playlist</li>
-                <li>Nome playlist</li>
-                <li>Nome playlist</li>
+                <li class="highlight">Nome playlist</li>
+                <li class="highlight">Nome playlist</li>
+                <li class="highlight">Nome playlist</li>
+                <li class="highlight">Nome playlist</li>
+                <li class="highlight">Nome playlist</li>
+                <li class="highlight">Nome playlist</li>
             </ul>
         </div>
 
     
         <div class="pl-8">
-            <div>
-                <img src="./img/download.svg" class=" my-10 vertical-centered" alt="icona del download">
+            <div class="gray-text highlight">
+                <img src="./img/download.svg" class="my-10 vertical-centered gray" alt="icona del download">
                 <span class="bold-600 sm">Installa app</span>
             </div>
             <div class="line sm"></div>
@@ -75,12 +75,12 @@
         <main>
             <!-- Sezione di navigazione interna al main  -->
             <ul class="horizontal-centred">
-                <li class="bold-600 gray-text">IN EVIDENZA</li>
-                <li class="bold-600 gray-text">PODCAST</li>
-                <li class="bold-600 gray-text">CLASSIFICHE</li>
-                <li class="bold-600 gray-text">GENERI E MOOD</li>
-                <li class="bold-600 gray-text">NUOVE USCITE</li>
-                <li class="bold-600 gray-text">SCOPRI</li>
+                <li><a class="bold-600 gray-text inline-blk relative" href="#">IN EVIDENZA</a></li>
+                <li><a class="bold-600 gray-text inline-blk relative" href="#">PODCAST</a>
+                <li><a class="bold-600 gray-text inline-blk relative" href="#">CLASSIFICHE</a></li>
+                <li><a class="bold-600 gray-text inline-blk relative" href="#">GENERI E MOOD</a></li>
+                <li><a class="bold-600 gray-text inline-blk relative" href="#">NUOVE USCITE</a></li>
+                <li><a class="bold-600 gray-text inline-blk relative" href="#">SCOPRI</a></li>
             </ul>
 
             <!-- singola sezione di raggruppamento tematico -->
@@ -89,32 +89,62 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-6 col-md-3 col-lg-2 horizontal-centred">
-                            <img src="./img/metal_lifting.jpg" alt="" class="my-10">
+                            <div class="album">
+                                <img src="./img/metal_lifting.jpg" class="my-10" alt="">
+                                <div class="overlay">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                            </div>
                             <h3 class="my-10">Heavy Metal</h3>
                             <h4 class="my-10 bold-600 gray-text">Subtitle</h4>
                         </div>
                         <div class="col-xs-6 col-md-3 col-lg-2 horizontal-centred">
-                            <img src="./img/stranger.jpeg" alt="" class="my-10">
+                            <div class="album">
+                                <img src="./img/stranger.jpeg" alt="" class="my-10">
+                                <div class="overlay">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                            </div>
                             <h3 class="my-10">Stranger Things, Vol.1(a Netflix Original Series Soundtrack)</h3>
                             <h4 class="my-10 bold-600 gray-text">Kyle Dixon & Michael Stein</h4>
                         </div>
                         <div class="col-xs-6 col-md-3 col-lg-2 horizontal-centred">
-                            <img src="./img/aquietplace.jpeg" alt="" class="my-10">
+                            <div class="album">
+                                <img src="./img/aquietplace.jpeg" alt="" class="my-10">
+                                <div class="overlay">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                            </div>
                             <h3 class="my-10">A quiet place</h3>
                             <h4 class="my-10 bold-600 gray-text">Subitle</h4>
                         </div>
                         <div class="col-xs-6 col-md-3 col-lg-2 horizontal-centred">
-                            <img src="./img/split.jpeg" alt="" class="my-10">
+                            <div class="album">
+                                <img src="./img/split.jpeg" alt="" class="my-10">
+                                <div class="overlay">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                            </div>
                             <h3 class="my-10">Split</h3>
                             <h4 class="my-10 bold-600 gray-text">Subitle</h4>
                         </div>
                         <div class="col-xs-6 col-md-3 col-lg-2 horizontal-centred">
-                            <img src="./img/cure.jpeg" alt="" class="my-10">
+                            <div class="album">
+                                <img src="./img/cure.jpeg" alt="" class="my-10">
+                                <div class="overlay">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                            </div>
                             <h3 class="my-10">A cure for wellness</h3>
                             <h4 class="my-10 bold-600 gray-text">Subitle</h4>
                         </div>
                         <div class="col-xs-6 col-md-3 col-lg-2 horizontal-centred">
-                            <img src="./img/sinister.jpeg" alt="" class="my-10">
+                            <div class="album">
+                                <img src="./img/sinister.jpeg" alt="" class="my-10">
+                                <div class="overlay">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                            </div>
                             <h3 class="my-10">Sinister</h3>
                             <h4 class="my-10 bold-600 gray-text">Subitle</h4>
                         </div>
@@ -129,11 +159,21 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-6 col-md-3 col-lg-2 horizontal-centred">
-                            <img src="./img/radar.jpeg" alt="" class="my-10">
+                            <div class="album">
+                                <img src="./img/radar.jpeg" alt="" class="my-10">
+                                <div class="overlay">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                            </div>
                             <h3 class="my-10">Release radar</h3>
                         </div>
                         <div class="col-xs-6 col-md-3 col-lg-2 horizontal-centred">
-                            <img src="./img/mixdaily.jpeg" alt="" class="my-10">
+                            <div class="album">
+                                <img src="./img/mixdaily.jpeg" alt="" class="my-10">
+                                <div class="overlay">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                            </div>
                             <h3 class="my-10">Daily Mix 1</h3>
                         </div>
                     </div>
@@ -147,11 +187,21 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-6 col-md-3 col-lg-2 horizontal-centred">
-                            <img src="./img/youg.jpeg" alt="" class="my-10 circular">
+                            <div class="album circular">
+                                <img src="./img/youg.jpeg" alt="" class="my-10 circular">
+                                <div class="overlay circular">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                            </div>
                             <h3 class="my-10">Lana Del Ray</h3>
                         </div>
                         <div class="col-xs-6 col-md-3 col-lg-2 horizontal-centred">
-                            <img src="./img/einaudi.jpeg" alt="" class="my-10 circular">
+                            <div class="album">
+                                <img src="./img/einaudi.jpeg" alt="" class="my-10 circular">
+                                <div class="overlay circular">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                            </div>
                             <h3 class="my-10">Ludovico Einaudi</h3>
                         </div>
                     </div>

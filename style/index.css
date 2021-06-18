@@ -9,6 +9,10 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Font properties */
 body {
     color: white;
@@ -37,6 +41,7 @@ h4 {
     padding-left: 8px;
 }
 
+
 /* Elements */
 .container {
     position: absolute;
@@ -48,7 +53,7 @@ h4 {
 
     background-color: rgb(20, 25, 34);
 
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .button {
@@ -57,6 +62,11 @@ h4 {
     padding: 10px 30px;
     border: 1px solid white;
     border-radius: 20px;
+}
+
+.button:hover {
+    border-width: 2px;
+    font-weight: 700;
 }
 
 .bar {
@@ -110,7 +120,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
 
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 nav img {
@@ -135,7 +145,7 @@ nav .line {
 
 .playlist {
     flex-grow: 1;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .playlist li {
@@ -144,6 +154,40 @@ nav .line {
 
 .playlist .fas {
     font-size: 40px;
+}
+
+.gray {
+    filter: invert(0.5);
+}
+
+.highlight {
+    position: relative;
+}
+
+.highlight:hover {
+    color: white;
+}
+
+.highlight:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -8px;
+
+    height: 0;
+    width: 2px;
+    background-color: rgb(175, 253, 69);
+
+    transition: height 0.3s ease 0s, top 0.3s ease 0s;;
+}
+
+.highlight:hover:after {
+    height: 100%;
+    top: 0;
+}
+
+.highlight:hover .gray {
+    filter: invert(0);
 }
 
 /* Styling main */
@@ -158,10 +202,67 @@ main li {
     display: inline-block;
  
     margin: 20px 10px;
+    line-height: 50px;
+
+}
+
+main a:hover {
+    color: white;
+    font-weight: 800;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    height: 2px;
+    width: 0;
+    background-color: rgb(175, 253, 69);
+
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
 }
 
 main img {
-    max-width: 90%;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+main .album {
+    width: 90%;
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    opacity: 0;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay .far {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* styling footer */
@@ -196,10 +297,18 @@ footer {
     line-height: 30px;
 }
 
+.now-playing .far:hover {
+    color: white;
+}
+
 .volume .fas {
     line-height: 60px;
     margin: 0 3px;
     font-size: 15px;
+}
+
+.volume .fas:hover{
+    font-size: 18px;
 }
 
 .volume > .bar {
@@ -207,8 +316,13 @@ footer {
 }
 
 .player .fas, .player .far {
-    margin: 0 5px;
+    margin: 3px 5px;
     font-size: 20px;
+}
+
+.player .fas:hover, .player .far:hover{
+    font-size: 23px;
+    margin: 0 3px;
 }
 
 .player > .bar {
