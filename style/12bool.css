@@ -6,7 +6,7 @@
 }
 
 /* Container properties */
-.container-bl {
+.container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -23,7 +23,6 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-
 
 /* Column properties */
 [class*='col'] {
@@ -109,7 +108,7 @@
     width: calc( 100% / 12 * 1);
 }
 
-/* Additional utilities */
+/* Additional font utilities */
 .bold-700 {
     font-weight: 700;
 }
@@ -134,6 +133,7 @@
     font-weight: 200;
 }
 
+/* Addittional positionament properties */
 .relative {
     position: relative;
 }
